@@ -1,5 +1,5 @@
 html {
-  font-size: 19px;
+  font-size: 13px;
 }
 
 body {
@@ -14,30 +14,27 @@ body {
   padding: 0px;
   background-color: #0d192b;
   text-align: -webkit-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  width: 400px;
+  width: 300px;
   padding: 25px;
   background-color: #14253d;
-  justify-items: start;
   border-radius: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: 5px 10px 0px 20px #0c1729, 5px 20px 0px 20px #0c1729, 10px 20px 3px 60px #0c192c;
 }
 
 .containerImg {
   width: 100%;
   cursor: pointer;
-  position: relative;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   color: white;
-  z-index: -1;
+  position: relative;
 }
 .containerImg:hover::after {
   content: "";
@@ -173,7 +170,6 @@ body {
     padding: 0px;
     background-color: #0d192b;
     text-align: -webkit-center;
-    padding-top: 30px;
   }
 
   .card {

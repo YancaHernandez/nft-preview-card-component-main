@@ -5,7 +5,7 @@ $desktop: (
     min-width: 1440px,
 );
 
-$font-size: 19px;
+$font-size: 13px;
 $font-size-mobile: 13px;
 
 $color-soft-blue: hsl(215, 51%, 70%);
@@ -32,35 +32,31 @@ body {
     padding: 0px;
     background-color: $color-dark-blue-main;
     text-align: -webkit-center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    width: 400px;
+    width: 300px;
     padding: 25px;
     background-color: $color-dark-blue-card;
-    justify-items: start;
     border-radius: 20px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 
     5px 10px 0px 20px #0c1729,
     5px 20px 0px 20px #0c1729,
-    10px 20px 3px 60px #0c192c,
-    ;
+    10px 20px 3px 60px #0c192c;
 }
 
 .containerImg{
     width: 100%;
     cursor: pointer;
-    position: relative;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     color: $color-white;
-    z-index: -1;
-    &:hover::after{
+    position: relative;
+    &:hover::after {
         content: '';
         display: block;
         position: absolute;
@@ -189,7 +185,6 @@ body {
         padding: 0px;
         background-color: $color-dark-blue-main;
         text-align: -webkit-center;
-        padding-top: 30px;
     }
 
     .card {
